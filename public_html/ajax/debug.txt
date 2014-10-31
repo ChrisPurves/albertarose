@@ -1,0 +1,10 @@
+Success
+Success
+Success
+Success
+Success
+Email successfully sent.  We will contact you soon.
+Email successfully sent.  We will contact you soon.
+Email successfully sent.  We will contact you soon.
+Failure sending email.  Please try again later.
+Failure sending email.  Please try again later.

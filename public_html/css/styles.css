@@ -325,6 +325,95 @@ img.left {
 	margin: 5px;
 }
 
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: grey;
+	z-index: 90000;
+	opacity: 0.5;
+	display: none;
+}
+
+.myModal {
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 90001;
+	top: 10%;
+	max-height: 80%;
+	overflow: auto;
+	padding: 2em;
+	background-color: white;
+	display: none;
+}
+
+#questionnaire {
+	width: 40em;
+	font-size: 0.9em;
+}
+
+#response {
+	width: 20em;
+}
+
+#questionnaire div {
+	overflow: auto;
+	margin-bottom: 1em;
+}
+
+#questionnaire label {
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	text-align: right;
+}
+
+#questionnaire input[type=text], #questionnaire input[type=email], #questionnaire select, #questionnaire textarea {
+	width: 50%;
+	/*	margin-left: 50%;
+		vertical-align: top;*/
+}
+
+#questionnaire img {
+	display: none;
+}
+
+.center-contents {
+	text-align: center;
+}
+
+.modalHeader {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.closeModal {
+	float: right;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #080B3B;
+	color: white;
+	padding: 0.1em;
+	line-height: 0.8em;
+	border-radius: 0.2em;
+}
+
+.closeModal:hover {
+	background-color: #eeee00;
+	color: black;
+}
+
+ul.ui-front {
+	z-index: 99000;
+	font-size: 0.9em;
+}
+
 @media (min-width: 1200px) {
 	#servNav.affix {
 		max-width: 262px;

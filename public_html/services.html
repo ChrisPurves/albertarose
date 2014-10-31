@@ -13,6 +13,9 @@ All rights reserved.
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script src="js/services.js"></script>
 	</head>
 	<body>
@@ -74,7 +77,8 @@ All rights reserved.
 								<li><strong>Undergraduate Students</strong> – from consulting, to admission application – to finding accommodation – to finding possible scholarship sources – to airport pick-up; we are there to help you each step of the way.</li>
 								<li><strong>Graduate Students</strong> – from consulting, to finding a supervisor – to funding issues – to research proposal writing – to accommodations – to airport pick-up; we are there to help you each step of the way.</li>
 							</ul>
-							(As a free courtesy service, we will direct you to the right websites and student visa processing resources.)
+							<p>(As a free courtesy service, we will direct you to the right websites and student visa processing resources.)</p>
+							<p style="font-weight:bold">If you are interested in using our consulting services, please fill in the <a id="launchQuestionnaire" href="#questionnaire">this form</a> to determine your eligibility to attend a Canadian institution.  You will also receive a detailed list of our services and rates.
 						</div>
 						<div class="row">
 							<h1 id="IELTSPrep">IELTS Exam Preparation</h1>
@@ -117,6 +121,75 @@ All rights reserved.
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</div>
-
+		<div id="questionnaire" class="myModal">
+			<div class="modalHeader">
+				Questionnaire
+				<span class="closeModal">&#10006</span>
+			</div>
+			<form>
+				<div>
+					<label for="qName">Name:</label>
+					<input id="qName" name="qName" type="text">
+				</div>
+				<div>
+					<label for="qEmail">Email:</label>
+					<input id="qEmail" name="qEmail" type="email">
+				</div>
+				<div>
+					<label for="qCountry">Country:</label>
+					<input id="qCountry" name="qCountry" type="text" value="Pakistan">
+				</div>
+				<div>
+					<label for="qEducation">Level of Education:</label>
+					<select id="qEducation" name="qEducation">
+						<option>CGPA > 3.5</option>
+						<option>CGPA 3 - 3.5</option>
+						<option>CGPA 2.5 - 3</option>
+						<option>Percent > 85%</option>
+						<option>Percent 75 - 85%</option>
+						<option>Percent 65 - 75%</option>
+						<option>1st Division</option>
+						<option>2nd Division</option>
+					</select>
+				</div>
+				<div>
+					<label for="qUniversity">Name of University/College Attended in Pakistan:</label>
+					<input id="qUniversity" name="qUniversity" type="text">
+				</div>
+				<div>
+					<label for="qStudy">I want to study:</label>
+					<select id="qStudy" name="qStudy">
+						<option>Ph.D.</option>
+						<option>Masters</option>
+						<option>MBA</option>
+						<option>Bachelors</option>
+						<option>PG Diploma</option>
+						<option>Diploma</option>
+						<option>High School</option>
+					</select>
+				</div>
+				<div>
+					<label for="qSubject">Subject of Interest:</label>
+					<input id="qSubject" name="qSubject" type="text">
+				</div>
+				<div>
+					<label for="qInfo">Additional Information:</label>
+					<textarea id="qInfo" name="qInfo"></textarea>
+				</div>
+				<div class="center-contents">
+					<input id="qSubmit" type="submit">
+					<img alt="wait graphic" src="images/ajax-loader.gif">
+				</div>
+			</form>
+		</div>
+		<div id="overlay"></div>
+		<div id="response" class="myModal">
+			<div class="modalHeader">
+				Result of Submission
+				<span class="closeModal">&#10006</span>
+			</div>
+			<div class="content">
+			</div>
+		</div>
 	</body>
 </html>
