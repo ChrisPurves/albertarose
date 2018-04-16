@@ -40,6 +40,11 @@ body {
 
 }
 
+.postscript {
+    font-style: italic;
+    font-size: smaller;
+}
+
 h1 {
 	font-size: 2em;
 	font-family: roboto;
@@ -173,6 +178,7 @@ ul.navbar {
 
 #services {
 	overflow: auto;
+        display: flex;
 }
 
 #services > div {
@@ -181,6 +187,18 @@ ul.navbar {
 	margin: 10px 0 10px 3%;
 	border: 2px solid black;
 	border-radius: 4px;
+        padding-bottom: 2em;
+        position: relative;
+}
+
+#services > div > div {
+    position: absolute;
+    bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
 }
 
 #services h3 {
